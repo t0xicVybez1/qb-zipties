@@ -1,14 +1,27 @@
-Config = Config or {}
+Config = {}
 
-Config.UnZipItems = { -- Items That Can Be Used to Remove Zipties (Can Be Nothing)
+Config.UnZipItems = {
     'weapon_knife',
+    'weapon_switchblade',
+    'weapon_scissors',
 }
 
-Config.BagFallOffWait = 3 -- Time Before The Head Bag Automatically Falls Off (In Minutes)
+Config.BagFallOffWait = 3 -- Time before the head bag automatically falls off (in minutes)
 
-Config.ZiptieWiggleAmount = 100 -- Number of Times The Victim Must Press "Point" Before Breaking Free From Zipties (Default: B)
+Config.ZiptieWiggleAmount = 100 -- Number of times the victim must press "Point" before breaking free from zipties
 
--- Uses Clothing Menu --
-Config.BagSelection = 49 -- Mask Selection (Default: 49)
-Config.BagTexture = 19 -- Mask Type (Default: 19)
+-- Uses Clothing Menu
+Config.BagSelection = 49 -- Mask selection (Default: 49)
+Config.BagTexture = 19 -- Mask type (Default: 19)
 
+-- QB-Target Options
+Config.TargetOptions = {
+    RemoveBag = {
+        icon = 'fas fa-mask',
+        label = 'Remove Bag',
+    },
+    CutZiptie = {
+        icon = 'fas fa-cut',
+        label = 'Cut Ziptie',
+    },
+}
